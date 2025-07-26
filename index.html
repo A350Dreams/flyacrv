@@ -1,1 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Canada Rouge Virtual - Experience the Skies</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons CDN -->
+        <link rel="icon" href="https://cdn.discordapp.com/icons/1351746809197887548/3a7c931575d4a9b8d7aafc02dd96c85e.png?size=80" type="image/png">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a1a1a; /* Dark background */
+            color: #e0e0e0; /* Light grey text for contrast */
+        }
+        .text-rouge {
+            color: #e4002b; /* Air Canada Rouge Red */
+        }
+        .bg-rouge {
+            background-color: #e4002b; /* Air Canada Rouge Red */
+        }
+        .border-rouge {
+            border-color: #e4002b;
+        }
+        .shadow-lg-rouge {
+            box-shadow: 0 10px 15px -3px rgba(228, 0, 43, 0.1), 0 4px 6px -2px rgba(228, 0, 43, 0.05);
+        }
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #2a2a2a; /* Darker track */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #e4002b;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #c20024;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="bg-gray-900 shadow-md py-4 sticky top-0 z-50">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="flex items-center space-x-2">
+                <img src="https://cdn.discordapp.com/icons/1351746809197887548/3a7c931575d4a9b8d7aafc02dd96c85e.png?size=80" alt="Air Canada Rouge Virtual Logo" class="rounded-full">
+                <span class="text-2xl font-bold text-white">Air Canada Rouge <span class="text-rouge">Virtual</span></span>
+            </a>
+
+            <!-- Navigation Menu -->
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-300 hover:text-rouge font-medium transition duration-300">Home</a>
+                <a href="#about" class="text-gray-300 hover:text-rouge font-medium transition duration-300">About Us</a>
+                <a href="#fleet" class="text-gray-300 hover:text-rouge font-medium transition duration-300">Fleet</a>
+                <a href="#operations" class="text-gray-300 hover:text-rouge font-medium transition duration-300">Operations</a>
+                <a href="#join" class="text-gray-300 hover:text-rouge font-medium transition duration-300">Join Us</a>
+                <a href="#contact" class="text-gray-300 hover:text-rouge font-medium transition duration-300">Contact</a>
+            </nav>
+
+            <!-- Mobile Menu Button (Hamburger) -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-300 hover:text-rouge focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-900 py-2 shadow-inner">
+            <nav class="flex flex-col items-center space-y-3">
+                <a href="#home" class="block text-gray-300 hover:text-rouge font-medium transition duration-300 py-1">Home</a>
+                <a href="#about" class="block text-gray-300 hover:text-rouge font-medium transition duration-300 py-1">About Us</a>
+                <a href="#fleet" class="block text-gray-300 hover:text-rouge font-medium transition duration-300 py-1">Fleet</a>
+                <a href="#operations" class="block text-gray-300 hover:text-rouge font-medium transition duration-300 py-1">Operations</a>
+                <a href="#join" class="block text-gray-300 hover:text-rouge font-medium transition duration-300 py-1">Join Us</a>
+                <a href="#contact" class="block text-gray-300 hover:text-rouge font-medium transition duration-300 py-1">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="relative bg-gradient-to-r from-gray-950 to-gray-800 text-white py-24 md:py-32 overflow-hidden">
+            <img src="https://cdn.discordapp.com/attachments/1372489685493878784/1398770993769480262/hero2.png?ex=68869280&is=68854100&hm=28fcd2c6c91b7390046fe584ab22e8a0f7a2e649c0e61a3572b13509628e08d0&" alt="Air Canada Rouge Aircraft in flight" class="absolute inset-0 w-full h-full object-cover opacity-30">
+            <div class="container mx-auto px-4 relative z-10 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 animate-fade-in-up">
+                    Experience the Skies with <br class="hidden md:block"> <span class="text-rouge">Air Canada Rouge Virtual</span>
+                </h1>
+                <p class="text-lg md:text-xl max-w-3xl mx-auto mb-10 opacity-90 animate-fade-in-up delay-200">
+                    Join a passionate community of virtual pilots dedicated to realistic flight simulation and shared aviation experiences.
+                </p>
+                <a href="#join" class="inline-block bg-rouge hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105 shadow-lg-rouge animate-fade-in-up delay-400">
+                    Become a Pilot Today
+                </a>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-16 md:py-24 bg-gray-900 text-gray-200">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center text-white mb-12">About <span class="text-rouge">Us</span></h2>
+                <div class="flex flex-col md:flex-row items-center md:space-x-12">
+                    <div class="md:w-1/2 mb-8 md:mb-0">
+                        <img src="https://cdn.discordapp.com/attachments/1364759010611298324/1382807763146506381/image.png?ex=68868196&is=68853016&hm=15f815e2427bd73d5499e9f779c6eb4d56987ec623d5d02de95d985b2612f4f3&" alt="Community of Virtual Pilots" class="rounded-xl shadow-xl transform transition duration-500 hover:scale-105">
+                    </div>
+                    <div class="md:w-1/2 leading-relaxed">
+                        <p class="mb-6 text-lg">
+                            Air Canada Rouge Virtual is a vibrant and dedicated community for flight simulation enthusiasts who share a passion for the Air Canada Rouge experience. We strive for realism, professionalism, and most importantly, fun! Our virtual airline operates with the same routes, fleet, and operational standards as the real Air Canada Rouge, providing an immersive and challenging environment for our pilots.
+                        </p>
+                        <p class="mb-6 text-lg">
+                            Whether you're an experienced virtual aviator or just starting your journey, you'll find a welcoming community, comprehensive resources, and exciting opportunities to explore the world from the cockpit of an Air Canada Rouge aircraft. We believe in fostering a supportive environment where pilots can learn, grow, and share their love for aviation.
+                        </p>
+                        <ul class="list-disc list-inside space-y-2 text-lg">
+                            <li><span class="font-semibold text-white">Realistic Operations:</span> Fly real-world routes and schedules.</li>
+                            <li><span class="font-semibold text-white">Dedicated Community:</span> Connect with fellow aviation enthusiasts.</li>
+                            <li><span class="font-semibold text-white">Continuous Learning:</span> Access resources to enhance your flying skills.</li>
+                            <li><span class="font-semibold text-white">Global Network:</span> Explore destinations across the globe.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fleet Section -->
+        <section id="fleet" class="py-16 md:py-24 bg-gray-800 text-gray-200">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center text-white mb-12">Our <span class="text-rouge">Fleet</span></h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+               
+                    <div class="bg-gray-900 rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl-rouge">
+                        <img src="https://rouge.pfconnect.online/public/fleet/a320.png" alt="Airbus A321" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-white mb-3">Airbus A321</h3>
+                            <p class="text-gray-300 mb-4">
+                                The longest variant of the A320 family, offering increased capacity for popular routes.
+                            </p>
+                            <ul class="text-sm text-gray-400 space-y-1">
+                                <li><span class="font-medium">Capacity:</span> ~190 passengers</li>
+                                <li><span class="font-medium">Range:</span> Medium-haul</li>
+                                <li><span class="font-medium">Role:</span> High-demand routes</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Aircraft Card 4 -->
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Operations Section -->
+        <section id="operations" class="py-16 md:py-24 bg-gray-900 text-gray-200">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center text-white mb-12">Our <span class="text-rouge">Operations</span></h2>
+                <div class="flex flex-col md:flex-row-reverse items-center md:space-x-reverse md:space-x-12">
+                    <div class="md:w-1/2 mb-8 md:mb-0">
+                        <img src="https://cdn.discordapp.com/attachments/1372489685493878784/1398670455526658058/acrv.png?ex=688634de&is=6884e35e&hm=f747a9771cd9cea3ef8b6dc2d3b3e1f723057bc9cb1b7495b3e009ed04b48250&" alt="Virtual Operations Map" class="rounded-xl shadow-xl transform transition duration-500 hover:scale-105">
+                    </div>
+                    <div class="md:w-1/2 leading-relaxed">
+                        <p class="mb-6 text-lg">
+                            At Air Canada Rouge Virtual, we pride ourselves on simulating real-world airline operations as closely as possible. Our system tracks your flights, hours, and achievements, providing a rewarding experience for every pilot.
+                        </p>
+                        <p class="mb-6 text-lg">
+                            We offer a dynamic route network covering all destinations served by the real Air Canada Rouge, from vibrant city centers to exotic leisure getaways. Pilots can choose from a variety of flight types, including scheduled passenger services, charter flights, and special events.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-lg">
+                            <div class="flex items-start space-x-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#e4002b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin flex-shrink-0 mt-1"><path d="M12 12V2A10 10 0 0 0 2 12h10z"/><path d="M12 12V22A10 10 0 0 1 22 12h-10z"/></svg>
+                                <div>
+                                    <h4 class="font-semibold text-white">Global Route Network</h4>
+                                    <p class="text-gray-300 text-base">Fly to destinations worldwide.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#e4002b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plane flex-shrink-0 mt-1"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L11 8 1.8 6.2c-.5-.1-1 0-1.3.3-.3.3-.4.8-.2 1.3L4 12l-2 3.5c-.3.5-.2 1 .1 1.4.3.4.8.5 1.3.3L11 16l3.5 3.5c.5.5 1.2.5 1.7 0l2-2c.4-.4.4-1 .1-1.5z"/></svg>
+                                <div>
+                                    <h4 class="font-semibold text-white">Flight Tracking System</h4>
+                                    <p class="text-gray-300 text-base">Monitor your progress and statistics.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#e4002b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users flex-shrink-0 mt-1"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                                <div>
+                                    <h4 class="font-semibold text-white">Active Community Events</h4>
+                                    <p class="text-gray-300 text-base">Participate in group flights and challenges.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#e4002b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap flex-shrink-0 mt-1"><path d="M21.43 2.57c-.19-.36-.5-.65-.88-.84a2.1 2.1 0 0 0-2.47.2L12 7.5l-6.08-5.47a2.1 2.1 0 0 0-2.47-.2c-.38.19-.69.48-.88.84a2.1 2.1 0 0 0-.2 2.47L12 22l10.08-16.96a2.1 2.1 0 0 0-.2-2.47z"/><path d="M8.5 10v7.5"/><path d="M15.5 10v7.5"/></svg>
+                                <div>
+                                    <h4 class="font-semibold text-white">Training & Resources</h4>
+                                    <p class="text-gray-300 text-base">Access guides and tutorials for all skill levels.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Join Us Section -->
+        <section id="join" class="py-16 md:py-24 bg-gray-950 text-white text-center">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold mb-8">Ready to Take <span class="text-rouge">Flight?</span></h2>
+                <p class="text-lg md:text-xl max-w-3xl mx-auto mb-10 opacity-90">
+                    Joining Air Canada Rouge Virtual is simple and rewarding. Become a part of our growing family of virtual pilots today!
+                </p>
+                    <div class="bg-gray-900 text-gray-200 rounded-xl p-8 shadow-xl transform transition duration-300 hover:scale-105 hover:shadow-lg-rouge max-w-sm w-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#e4002b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users-round mx-auto mb-4"><path d="M18 21a8 8 0 0 0-16 0"/><circle cx="10" cy="7" r="4"/><path d="M22 21a8 8 0 0 0-16 0"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        <h3 class="text-2xl font-semibold mb-3">Join now !</h3>
+                        <p class="mb-6 text-gray-300">
+                            Bring your skills to our realistic environment and enjoy challenging operations.
+                        </p>
+                        <a href="https://discord.gg/MvnXkWBxfc" class="inline-block bg-rouge hover:bg-red-700 text-white font-bold py-2 px-6 rounded-full transition duration-300">
+                            Join here
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+ 
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-white py-10">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-6 space-y-4 md:space-y-0">
+                <div class="text-lg font-semibold">Air Canada Rouge <span class="text-rouge">Virtual</span></div>
+                <nav class="flex space-x-6">
+                    <a href="#home" class="hover:text-rouge transition duration-300">Home</a>
+                    <a href="#about" class="hover:text-rouge transition duration-300">About</a>
+                    <a href="#fleet" class="hover:text-rouge transition duration-300">Fleet</a>
+                    <a href="#join" class="hover:text-rouge transition duration-300">Join</a>
+                    <a href="#contact" class="hover:text-rouge transition duration-300">Contact</a>
+                </nav>
+               
+                </div>
+            </div>
+            <p class="text-gray-500 text-sm">&copy; 2025 Air Canada Rouge Virtual. All rights reserved. This is a fan-made virtual airline and is not affiliated with Air Canada or Air Canada Rouge.</p>
+        </div>
+    </footer>                
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Mobile menu toggle functionality
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
 
